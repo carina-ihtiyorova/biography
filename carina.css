@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    margin: 0%;
+    background: linear-gradient(35deg,pink,coral,purple,black);
+   
+
+}
+.wrapper{
+    display:flex;
+    justify-content: space-around;
+    animation: blinking 6s infinite ;
+
+   
+}
+.wrapper p{
+    width: 50%;
+    font-size: 27px;
+}
+header h1{
+    text-align: center;
+    padding: 20px;
+  
+    font-size: 40px;
+    color: white;
+    
+
+}
+nav li{
+    align-items: center;
+    padding: 50px ;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+nav li:hover{
+    background: linear-gradient(35deg,pink,coral,purple,black);
+}
+nav ul,
+header{
+    background: linear-gradient(45deg,red,black);
+  
+}
+nav a{
+ text-decoration: none;
+ color: white;
+ font-size: 30px;
+}
+.image{
+
+
+text-align: center;
+}
+.wavy{
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(transparent,rgba(0,0,0,0,0.2));
+    animation: blinking 6s infinite ;
+
+}
+ span{
+    position: relative;
+    display: inline-block;
+    padding: 40px;
+    color: #fff;
+    font-size: 2em;
+    text-transform: capitalize;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+
+
+}
+#hobbies {
+    display: flex;
+   justify-content: center;
+   padding: 20px;
+   margin-top: 80px;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    /* float: left; */
+    width: 400px;
+    animation: blinking 1s infinite ;
+
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(52, 5, 58);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+table,tr,th,td{
+    border: solid 1px black;
+    font-size: 33px;
+    background: linear-gradient(33deg,lime,red);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button{
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    background: linear-gradient(120deg,pink,hotpink);
+    border: solid transparent;
+}
+button a{
+    color: wheat;
+    text-decoration: none;
+    font-size: 20px;
+}
+#btm{
+    background: linear-gradient(33deg,lime,red);
+    padding: 20px;
+    
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes blinking{
+    0%{
+        background-color: rgb(214, 161, 221);
+    }
+}
